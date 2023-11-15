@@ -840,6 +840,7 @@ body {
 .footer__block {
   padding: 54px;
   background: #2c343e;
+  background-size: cover;
 }
 
 .footer__link_box {
@@ -910,7 +911,7 @@ body {
 .hero__block {
   padding: 100px 24px;
   background-repeat: no-repeat;
-  background-image: url(../../img/heroBg1.jpg);
+  background-image: url("/img/heroBg1.jpg");
   background-position: center;
   background-size: cover;
 }
