@@ -28,7 +28,7 @@
 @media screen and (min-width: 755px) {
   .hero__block {
     background-repeat: no-repeat;
-    background-image: url(../../img/hero-tablet.jpg);
+    background-image: url("/img/hero-tablet.jpg");
     padding-top: 104px;
     padding-bottom: 104px;
   }
@@ -48,7 +48,7 @@
 @media screen and (min-width: 887px) {
   .hero__block {
     background-repeat: no-repeat;
-    background-image: url(../../img/hero_desktop.jpg);
+    background-image: url("/img/hero_desktop.jpg");
     padding-top: 104px;
     padding-bottom: 104px;
   }
