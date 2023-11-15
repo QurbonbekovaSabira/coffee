@@ -1,0 +1,61 @@
+.plane__block {
+  padding-top: 101px;
+  padding-bottom: 136px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-repeat: no-repeat;
+  background-image: url(../img/plane-mobile.png);
+  border-radius: 10px;
+  background-size: cover;
+  text-align: center;
+}
+.plane__title {
+  @include title(40px);
+  line-height: 40px;
+  margin-bottom: 22px;
+}
+.plane__text {
+  @include text(15px);
+  line-height: 25px;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .plane__block {
+    padding: 0;
+    padding-top: 127px;
+    padding-bottom: 126px;
+    padding-left: 58px;
+    background-image: url(../img/plane-tablet.jpg);
+    text-align: left;
+  }
+  .plane__title {
+    max-width: 398px;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .plane__text {
+    max-width: 398px;
+  }
+}
+
+@media screen and (min-width:1000px) {
+    .plane__block{
+        background-image: url(../img/plane-desctop.png);
+    }
+    .plane__title {
+        max-width: 398px;
+        font-size: 72px;
+        line-height: 72px;
+      margin: 0;
+      margin-bottom: 32px;
+      max-width: 485px;
+      }
+      .plane__text {
+        max-width: 445px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+}

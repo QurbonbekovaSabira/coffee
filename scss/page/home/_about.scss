@@ -1,0 +1,135 @@
+.about {
+  padding-bottom: 120px;
+}
+.about__content {
+  padding-top: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 10px;
+background-repeat: no-repeat;
+background-image: url(../../img/about-bg.png);
+  background-size:100% 60%;
+}
+.about__title {
+  @include title(28px);
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.about__text {
+  color: #fefcf7;
+  @include font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 64px;
+  text-align: center;
+  opacity: 0.8;
+}
+.about__card {
+  padding: 72px 33px 51px 33px;
+  border-radius: 8px;
+  background: #0e8784;
+  margin-bottom: 54px;
+  text-align: center;
+  &::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/aboutIcon.svg);
+  }
+}
+.about__card_title {
+  @include title(24px);
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.about__card_text {
+  color: #fefcf7;
+  @include font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 212px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+ .about{
+    padding-bottom: 144px;
+ }
+  
+ .about__content{
+    padding-top: 71px;
+ }  
+    .about__card {
+        padding: 0;
+    padding: 41px 48px 41px 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 55px;
+    margin-bottom: 24px;
+    max-width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  .about__title{
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .about__text {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .about__card_title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .about__card_text {
+    max-width: 344px;
+margin: 0;
+  }
+}
+
+
+@media screen and (min-width:1110px) {
+.about{
+    padding-bottom: 200px;
+}
+    .about__content{
+    padding-top: 100px;
+}
+.about__card_block{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.about__card{
+    padding: 0;
+    max-width: 350px;
+    padding: 48px;
+    padding-top: 72px;
+    flex-direction: column;
+    margin: 0;
+}
+.about__card_content{
+    text-align: center;
+}
+ .about__title{
+   margin-bottom: 32px;
+ } 
+ .about__text{
+margin-bottom: 86px;
+    font-size: 16px;
+    line-height: 26px;
+ }
+ .about__card_text{
+    margin: 0;
+ }
+}

@@ -1,0 +1,137 @@
+.work {
+  padding-bottom: 120px;
+}
+.work__container_second{
+  padding: 0;
+}
+.work__title {
+  color: #83888f;
+  @include title(24px);
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.work__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.work__item {
+  margin-bottom: 56px;
+  text-align: center;
+}
+.work__item_dote {
+  border: 2px solid #0e8784;
+  display: inline-block;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  margin-bottom: 67px;
+  margin-top: -4%;
+  display: none;
+}
+.work__item_num {
+  @include title;
+  color: #fdd6ba;
+  margin-bottom: 39px;
+}
+.work__item_title {
+  @include title(28px);
+  line-height: 36px;
+  color: #333d4b;
+  max-width: 327px;
+  margin-bottom: 32px;
+}
+.work__item_text {
+  color: #333d4b;
+  @include font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 327px;
+  margin-bottom: 24px;
+  opacity: 0.8;
+}
+.work__item_btn {
+  padding: 15px 30px;
+  @include title(18px);
+  line-height: 25px;
+  border-radius: 6px;
+  background: #0e8784;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background: #66d2cf;
+  }
+}
+/// 3page
+.work__second{
+  margin-top: 120px;
+  padding: 80px 24px;
+background-color:#2C343E;
+background-size: contain;
+}
+.work__item_title_second , .work__item_text_second{
+  color: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .work {
+    padding-bottom: 144px;
+  }
+  .work__block{
+    margin-top: 140px;
+  }
+  .work__item {
+    text-align: left;
+    margin: 0;
+  }
+  .work__list {
+    justify-content: space-between;
+    border-top: 2px solid #fdd6ba;
+    margin-bottom: 44px;
+  }
+  .work__list {
+    flex-direction: row;
+  }
+  .work__item_dote {
+    display: inline-block;
+    margin-bottom: 42px;
+  }
+  .work__item:last-child {
+    border-top: 3px solid #fff;
+    margin-top: -2px;
+    z-index: 2;
+  }
+  .work__item_title {
+    max-width: 223px;
+    margin: 0;
+    margin-bottom: 38px;
+  }
+  .work__item_text {
+    margin: 0;
+    max-width: 223px;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .work {
+    padding-bottom: 200px;
+  }
+  .work__block{
+    margin-top: 144px;
+  }
+  .work__list {
+    margin-bottom: 64px;
+  }
+  .work__item_title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 43px;
+  }
+  .work__item_text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
